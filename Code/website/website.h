@@ -1,0 +1,20 @@
+/*
+ *   We're going to store something called ""
+ */
+
+const char ourWebsite[] PROGMEM = R"=====(
+<HTML>
+	<HEAD>
+			<TITLE>LitterBot</TITLE>
+	</HEAD>
+<BODY style="background-color: #f5f5f5">
+	<CENTER>
+		<B style="position: absolute; top: 0; left: 0;background-color: #8B0B20; width: 100%; height: 8%; font-size: 6vh;color: white; ">LitterBot</B>
+	</CENTER>	
+  <form action="/forward" method="POST"><input type="submit"; style="border-radius: 50%; position: absolute; top: 10%; left:50%; transform: translateX(-50%); background-color: #c14547; color: white; width: 25%; height: 25%; font-size: 70px" value="&#x2191"></input></form>
+	<form action="/right" method="POST"><input type="submit"; style="border-radius: 50%; position: absolute; top: 50%; right:0%; transform: translateY(-50%); background-color: #c14547; color: white; width: 25%; height: 25%; font-size: 70px" value="&#x2192"></input></form>
+	<form action="/back" method="POST"><input type="submit"; style="border-radius: 50%; position: absolute; bottom: 10%; left:50%; transform: translateX(-50%); background-color: #c14547; color: white; width: 25%; height: 25%; font-size: 70px" value="&#x2193"></input></form>
+	<form action="/left" method="POST"><input type="submit"; style="border-radius: 50%; position: absolute; top: 50%; left:0%; transform: translateY(-50%);background-color: #c14547; color: white; width: 25%; height: 25%; font-size: 70px" value="&#x2190"></input></form>
+</BODY>
+</HTML>
+)=====";
