@@ -74,28 +74,28 @@ void ResetButton()
 void Forward()
 {
   SetDirection("forward");
-  StartMotors(100,1);
+  StartMotors(100,1.5);
   ResetButton();
 }
 
 void Back()
 {
   SetDirection("back");
-  StartMotors(100,1);
+  StartMotors(50,1.5);
   ResetButton();
 }
 
 void Left()
 {
   SetDirection("left");
-  StartMotors(50,1);
+  StartMotors(50,1.5);
   ResetButton();
 }
 
 void Right()
 {
   SetDirection("right");
-  StartMotors(50,1);
+  StartMotors(50,1.5);
   ResetButton();
 }
 
@@ -201,13 +201,13 @@ void RightMotorMode(char* mode)
 {
     if ( mode == "clockwise")
      {
-        digitalWrite(PinDirB1, HIGH); 
-        digitalWrite(PinDirB2, LOW); 
+        digitalWrite(PinDirB1, LOW); 
+        digitalWrite(PinDirB2, HIGH); 
      } 
      else if (mode == "anticlockwise")
      {
-        digitalWrite(PinDirB1, LOW); 
-        digitalWrite(PinDirB2, HIGH); 
+        digitalWrite(PinDirB1, HIGH); 
+        digitalWrite(PinDirB2, LOW); 
      }
      else if (mode == "stop")
      {
